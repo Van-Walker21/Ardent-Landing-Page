@@ -1,0 +1,108 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout>
+	<main>
+		<section class="hero">
+			<div class="container">
+				<h1>Break Free From SaaS Dependence. Reclaim Control with Ardent Business Solutions.</h1>
+				<p>Ardent empowers Langley businesses to overcome costly, fragmented SaaS solutions through secure, integrated, self-hosted systems.</p>
+				<a href="#consultation" class="btn">Start Your Transformation</a>
+			</div>
+		</section>
+
+		<section class="problem">
+			<div class="container">
+				<h2>Big Tech is Draining Your Business</h2>
+				<div class="problem-grid">
+					<div class="problem-item">
+						<h3>Expensive Subscriptions</h3>
+						<p>Endless monthly fees eating into your profits</p>
+					</div>
+					<div class="problem-item">
+						<h3>Integration Nightmares</h3>
+						<p>Disconnected tools slowing down your workflow</p>
+					</div>
+					<div class="problem-item">
+						<h3>Data Fragmentation</h3>
+						<p>Critical business data scattered across multiple platforms</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="vision">
+			<div class="container">
+				<h2>Experience Sovereignty, Simplicity, and Speed</h2>
+				<p>Ardent delivers a comprehensive technology ecosystem tailored specifically for Langley businesses, ensuring complete control and seamless operations.</p>
+			</div>
+		</section>
+
+		<section class="value-props">
+			<div class="container">
+				<div class="props-grid">
+					<div class="prop-item">
+						<h3>Reclaim Your Data</h3>
+						<p>Secure, compliant hosting within Canada. Full data sovereignty guaranteed.</p>
+					</div>
+					<div class="prop-item">
+						<h3>Custom Ecosystems</h3>
+						<p>Bespoke automations and integrated apps designed for your unique business needs.</p>
+					</div>
+					<div class="prop-item">
+						<h3>Freedom from SaaS Overload</h3>
+						<p>One comprehensive solution that eliminates subscription complexity.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="technology">
+			<div class="container">
+				<h2>Next-Generation Technology, Built Exclusively for Your Success</h2>
+				<p>Advanced local and cloud-based solutions addressing Langley businesses' unique operational challenges with unparalleled efficiency and security.</p>
+			</div>
+		</section>
+
+		<section id="consultation" class="cta">
+			<div class="container">
+				<h2>Ready to Transform Your Business Systems—On Your Terms?</h2>
+				<p>Book your free consultation today to discover how Ardent Business Solutions can empower your Langley business with tailored technology solutions.</p>
+				<a href="#" class="btn">Book Your Free Consultation</a>
+			</div>
+		</section>
+	</main>
+</Layout>
+
+<style>
+	.hero, .problem, .vision, .value-props, .technology, .cta {
+		padding: 100px 0;
+		text-align: center;
+	}
+
+	.hero h1 {
+		font-size: 3rem;
+		margin-bottom: 20px;
+		color: var(--primary-blue);
+	}
+
+	.problem-grid, .props-grid {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 30px;
+		margin-top: 50px;
+	}
+
+	.problem-item, .prop-item {
+		background-color: rgba(74, 144, 226, 0.1);
+		padding: 30px;
+		border-radius: 10px;
+	}
+
+	section p {
+		max-width: 800px;
+		margin: 20px auto;
+		color: var(--text-gray);
+	}
+</style>

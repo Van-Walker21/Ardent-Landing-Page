@@ -1,0 +1,76 @@
+---
+interface Props {
+	title: string;
+	description: string;
+}
+
+const { 
+  title = "Ardent Business Solutions - Technology Sovereignty for Langley Businesses", 
+  description = "Empowering Langley businesses with custom, self-hosted technology solutions that break free from SaaS limitations." 
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content={description} />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
+<style is:global>
+	:root {
+		--bg-dark: #0A0A0F;
+		--primary-blue: #4A90E2;
+		--secondary-purple: #6B5AED;
+		--text-light: #FFFFFF;
+		--text-gray: #B0B0B0;
+	}
+
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+	html, body {
+		font-family: 'Inter', sans-serif;
+		background-color: var(--bg-dark);
+		color: var(--text-light);
+		line-height: 1.6;
+	}
+
+	h1, h2, h3 {
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 700;
+	}
+
+	.container {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0 15px;
+	}
+
+	.btn {
+		display: inline-block;
+		padding: 12px 24px;
+		background-color: var(--primary-blue);
+		color: white;
+		text-decoration: none;
+		border-radius: 5px;
+		transition: background-color 0.3s ease;
+	}
+
+	.btn:hover {
+		background-color: var(--secondary-purple);
+	}
+</style>
